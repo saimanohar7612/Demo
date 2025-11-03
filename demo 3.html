@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dome</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+    .interstyle{
+        background-color : lightgoldenrodyellow;
+         color :  lightsalmon;  
+    }
+    </style>
+
+</head>
+<body>
+    <h1 >CSS: External & Internal & Inline</h1>
+    <h2>External CSS</h2>
+
+    <div class = "exterstyle">
+
+        <p>styled by <strong>External </strong>CSS from <code>style.css.</code></p>
+
+    </div>
+     <h3>Internal CSS</h3>
+    <div class="interstyle">
+
+           <p> styled by internal CSS in the <code>&lt;style&gt;</code> tag of this page</p>
+
+    </div>
+    <h4>Inline CSS</h4>
+    <div style=" background-color:lightgreen;color :aquamarine">
+        
+        <p> styled by Inline CSS via the <code>style</code>="" attribute on this element</p>
+
+        </div>
+    
+            <h3>Specificity Showdown(Who wins?)</h3>
+
+            <p>The same element is targeted by external,internal and inline rules:</p>
+            <ul>
+                <li>External sets it to <b>blue</b></li>
+                <li>Internal tries to make it <b>green</b> </li>
+                <li>Inline forces it to <b>red</b></li>
+            </ul>
+    
+</body>
+</html>
